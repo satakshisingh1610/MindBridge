@@ -1,0 +1,25 @@
+# MindBridge — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core LLM & UI ─────────────────────────────────────────────────────────────
+gradio>=4.20.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# ── Sentiment Analysis (Emotion Detection) ───────────────────────────────────
+vaderSentiment>=3.3.2       # Rule-based, fast, no GPU needed
+textblob>=0.17.1             # Subjectivity + polarity confirmation
+
+# ── RAG — Embeddings + Vector Search ─────────────────────────────────────────
+sentence-transformers>=2.7.0 # all-MiniLM-L6-v2 embeddings (384-dim)
+faiss-cpu>=1.8.0             # Nearest-neighbour vector search (CPU version)
+                             # Use faiss-gpu if CUDA available
+
+# ── Language Detection & Translation ─────────────────────────────────────────
+langdetect>=1.0.9            # Lightweight ISO 639-1 language detection
+deep-translator>=1.11.4      # Google Translate wrapper (no API key needed)
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+numpy>=1.24.0
+flask
+gunicorn

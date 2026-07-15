@@ -1,5 +1,5 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.5.1+cpu
+torch==2.13.0+cpu
 
 gradio==6.19.0
 requests>=2.31.0
